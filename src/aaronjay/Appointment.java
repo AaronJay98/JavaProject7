@@ -36,8 +36,8 @@ public abstract class Appointment {
         outputFile.close();
     }
 
-    public static Appointment load(String inputDescription) throws IOException {
-        File inputAppointment = new File("Appointments.txt");
+    public static Appointment load(String inputDescription, String filePathName) throws IOException {
+        File inputAppointment = new File(filePathName);
         Scanner fileScan = new Scanner(inputAppointment);
         String[] inputDescDivided = inputDescription.split(" ");
         String loadNext;

@@ -88,7 +88,7 @@ public class AppointmentBook {
                 Appointment loadAppointment;
                 System.out.println("Please enter the description of the appointment you want to load: ");
                 userDescription = userInput.nextLine().trim();
-                loadAppointment = Appointment.load(userDescription);
+                loadAppointment = Appointment.load(userDescription, "Appointments.txt");
                 if(loadAppointment.getDescription() == "Error101") {
                     System.out.println("Appointment not found");
                 }
