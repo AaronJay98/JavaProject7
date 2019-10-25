@@ -32,7 +32,7 @@ public abstract class Appointment {
     public void save() throws IOException {
         FileWriter saveAppend = new FileWriter("Appointments.txt", true);
         PrintWriter outputFile = new PrintWriter(saveAppend);
-        outputFile.println(description + " " + this.whoAmI() + " " + date[1] + "/" + date[2] + "/" + date[0] + "\n");
+        outputFile.println(description + " " + this.whoAmI() + " " + date[1] + "/" + date[2] + "/" + date[0]);
         outputFile.close();
     }
 
